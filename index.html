@@ -1,12 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Casos de uso</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Casos de uso</h1>
-    <p>dbnbfgn</p>
-</body>
+    <h2>App delivery</h2>
+    <p>
+      Contexto: La aplicacion de delivery permite a los clientes realizar
+      pedidos de comida desde una variedad de restauran, rastrear el estado del
+      pedido en tiempo real, recibir notificaciones de actualizaciones y
+      comunicarse con el servicio de atencion al cliente si surge algun
+      problema, todo desde la comodidad de su dispositivo movil.
+    </p>
+
+    <p><b>Caso de uso: </b>Realizar un pedido de comida</p>
+
+    <p><b>Actor:</b> Cliente</p>
+
+    <h4>Precondiciones:</h4>
+    <ol>
+      <li>
+        El cliente ha descargado la aplicacion y se ha registrado con exito.
+      </li>
+
+      <li>EL cliente tiene acceso a internet.</li>
+    </ol>
+
+    <h4>Flujo principal:</h4>
+    <ol>
+        <li>El cliente abre la aplicacion de delivery.</li>
+        <li>El cliente busca un restaurante o tipo de comida en la barra de busqueda.</li>
+        <li>La aplicación muestra una lista de restaurantes que coinciden con la búqueda.</li>
+        <li>El cliente selecciona un restaurante de la lista.</li>
+        <li>La aplicación muestra el menú del restaurante seleccionado.</li>
+        <li>El cliente selecciona los platos que desea pedir y los añade a su carrito.</li>
+        <li>Una vez que el cliente ha terminado de seleccionar platos, revisa su carrito t procede a la pantalla de pago.</li>
+        <li>El cliente introduce la dirección de entrega y selecciona un método de pago.</li>
+        <li>El cliente confirma el pedido.</li>
+        <li>La aplicación muestra una pantalla con confirmació con los detalles del pedido y el tiempo estimado de entrega.</li>
+        <li>El cliente puede rastrear el estado de su pedido en tiempo real.</li>
+        <li>El cliente recibe una notificación cuando el pedidos esta cerca de llegar.</li>
+        <li>El cliente recibe el pedido</li>
+    </ol>
+
+    <h4>Flujo alternativo:</h4>
+    <ol>
+        <li>Si el cliente tiene algun problema durante el proceso de pedido, puede contactar con el servicio de atención al cliente a través de la aplicación.</li>
+        <li>El el cliente quiere cancelar el pedido, puede hacerlo a través de la aplicacion antes de que el restaurante comience a preparar la comida.</li>
+    </ol>
+
+    <h4>Excepciones:</h4>
+    <ol>
+        <li>Si el restaurante seleccionado está cerrado o no puede preparar el pedido, la aplicacion notifica al cliente y le pide que seleccione otro restaurante.</li>
+        <li>Si el método de pago falla, la aplicación pide al cliente que introduzca los detalles de otro metodo de pago.</li>
+    </ol>
+  </body>
 </html>
