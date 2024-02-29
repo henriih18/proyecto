@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Caso de uso 2</h1>
+
+    <h2>Aplicacion de noticias</h2>
+
+    <p>
+      <b>Contexto:</b>Un usuario desea suscribirse al boletín de noticias para
+      recibir actualizaciones periódicas por correo electrónico..
+    </p>
+
+    <p><b>Caso de uso:</b>Suscripcion a boletin de noticias.</p>
+
+    <p><b>Actor:</b>Usuario</p>
+
+    <h4>Precondiciones:</h4>
+    <ol>
+      <li>
+        El cliente ha descargado la aplicacion y se ha registrado con exito.
+      </li>
+
+      <li>EL cliente tiene acceso a internet.</li>
+    </ol>
+
+    <h4>Flujo Principal</h4>
+
+    <ol>
+      <li>
+        El usuario abre la aplicacion de noticias y navega hasta la seccion de
+        "Suscripcion al Boletin".
+      </li>
+
+      <li>
+        El usuario ve un formulario de suscripción que solicita su nombre,
+        apellido, dirección de correo electrónico, fecha de nacimiento, país de
+        residencia, preferencias de noticias y frecuencia de envío.
+      </li>
+
+      <li>
+        El usuario ingresa su nombre, apellido, dirección de correo electrónico,
+        fecha de nacimiento, selecciona su país de residencia, marca sus
+        preferencias de noticias y selecciona la frecuencia de envío en el
+        formulario.
+      </li>
+
+      <li>
+        El usuario marca la casilla de aceptación de los términos y condiciones.
+      </li>
+
+      <li>
+        El usuario envía el formulario pulsando el botón de “Suscribirse”.
+      </li>
+
+      <li>
+        La aplicación valida la información ingresada y registra la suscripción
+        del usuario.
+      </li>
+
+      <li>
+        La aplicación envía un correo electrónico de confirmación al usuario.
+      </li>
+    </ol>
+
+    <h4>Flujo Alternativo</h4>
+
+    <ol>
+      <li>
+        Si la dirección de correo electrónico ingresada ya está suscrita, la
+        aplicación muestra un mensaje informándole al usuario que ya está
+        suscrito.
+      </li>
+
+      <li>
+        Si el usuario no acepta los términos y condiciones, la aplicación no
+        permite que el formulario sea enviado y muestra un mensaje de error.
+      </li>
+    </ol>
+
+    <h4>Postcondiciones</h4>
+    <ol>
+      <li>
+        La suscripción del usuario se registra en la base de datos de la
+        aplicación.
+      </li>
+
+      <li>
+        El usuario recibe un correo electrónico de confirmación de su
+        suscripción.
+      </li>
+    </ol>
+
+    <br >
+        <h3>Formulario de Suscripción al Boletín de Noticias</h3>
+
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" required>
+
+        <label for="apellido">Apellido</label>
+        <input type="text" name="apellido" required>
+
+        <label for="email">Correo Electronico</label>
+        <input type="email" name="email" required>
+
+        <label for="fechaNacimiento">Fecha Nacimiento</label>
+        <input type="date" name="fechaNacimiento" required>
+
+        <label for="paisResidencia">Pais de Residencia</label>
+        <input type="text" name="paisResidencia">
+
+        <h5>Preferencias de Noticias</h5>
+
+        <label for="Politica">Politica</label>
+        <input type="checkbox" name="politica" name="politica" >
+
+        <label for="deportes">Deportes</label>
+        <input type="checkbox" name="deportes">
+
+        <label for="tecnologia">Tecnologia</label>
+        <input type="checkbox" name="tecnologia">
+
+        <label for="cultura">Cultura</label>
+        <input type="checkbox" name="cultura">
+
+        <label for="economia">Economia</label>
+        <input type="checkbox" name="economia">
+
+        <label for="salud">Salud</label>
+        <input type="checkbox" name="salud">
+
+        <label for="preferencias">Preferencias de envio</label>
+
+        <select name="preferencias" id="">
+
+            <option value="diario">Diario</option>
+            <option value="semanal">Semanal</option>
+            <option value="mensual">Mensual</option>
+        </select>
+
+        <label for="terminos">Acepto los terminos y Condiciones</label>
+        <input type="checkbox" name="terminos">
+
+        <input type="submit">
+    </form>
+  </body>
+</html>
