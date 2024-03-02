@@ -8,7 +8,7 @@
   <body>
     <script>
       //clase celular
-      function celular(pantalla, altavoz, microfono, botonLlamada, teclado) {
+      function Celular(pantalla, altavoz, microfono, botonLlamada, teclado) {
         this.pantalla = pantalla;
         this.altavoz = altavoz;
         this.microfono = microfono;
@@ -22,30 +22,35 @@
           console.log(
             "Se marco el numero:" +
               marcarNumero +
-              "Llamando al numero" +
-              this.teclado
+              "Llamando al numero de",
+              "Pepito "
           );
         };
 
         this.obtenerinfo = function () {
           console.log(
-            "celular" +
+            "Celular " +
               this.botonLlamada +
-              " - Llamando" +
-              this.botonLlamada +
-              " - Estableciendo Conexion" +
-              this.teclado
+              " - Llamando a " +
+              this.pantalla +
+              " - Estableciendo Conexion"
           );
         };
       }
 
-      //Crear insidencia de libro
+      //Crear insidencia de celularr
 
-      const celular1 = new celular("Pepito", "316487956");
+      const celular1 = new Celular(
+        "Pepito",
+        "316487956",
+        "316487956",
+        "Inicio llamada",
+        "error3"
+      );
 
       //llamar a metodos de la instancia
-      celular1.realizarLlamada(4546)
-      celular1.obtenerinfo()
+      celular1.realizarLlamada(316487956);
+      celular1.obtenerinfo();
     </script>
   </body>
 </html>
